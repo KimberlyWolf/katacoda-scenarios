@@ -1,5 +1,12 @@
-* Exit and save the file.
+### Exit and save the file:
 
-* Execute the following statement to run the program:
+* Using the control key, click 'X'
 
-python hello-world.py
+* Click on 'Y' for yes
+
+* Then press enter to save the file
+
+
+### Execute the following statement to run the program:
+
+* python hello-world.py
