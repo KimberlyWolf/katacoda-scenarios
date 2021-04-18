@@ -9,4 +9,4 @@
 
 ### Execute the following statement to run the program:
 
-* python hello-world.py
+`python hello-world.py`{{execute}}

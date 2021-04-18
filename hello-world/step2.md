@@ -1,3 +1,3 @@
-Write out the following:
+Write out or copy the following:
 
-print("Hello World")
+`print("Hello World")`{{copy}}
