@@ -1,0 +1,26 @@
+{
+  "title": "Test Program to add Files",
+  "description": "Test Program to add Files",
+  "difficulty": "Beginner",
+  "time": "432 minute",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "python:3.8"
+  }
+}
