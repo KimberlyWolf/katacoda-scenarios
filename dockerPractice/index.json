@@ -4,6 +4,10 @@
   "difficulty": "Intermediate",
   "time": "30 minutes",
   "details": {
+"assets": {
+	"host01": [
+		{"file": "Dockerfile", "target" : "/usr/local/bin/", 
+			"chmod": "+x"}] },
     "steps": [
       {
         "title": "Step 1",
