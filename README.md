@@ -1,13 +1,7 @@
-# Interactive Katacoda Scenarios
+# Interactive Katacoda Scenarios (PLEASE READ)
 
 [![](http://shields.katacoda.com/katacoda/kimberlywolf/count.svg)](https://www.katacoda.com/kimberlywolf "Get your profile on Katacoda.com")
 
-Visit https://www.katacoda.com/kimberlywolf to view the profile and interactive scenarios
-
-### Writing Scenarios
-Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
-
-For examples, visit https://github.com/katacoda/scenario-example
 
 ### NOTE:
 
