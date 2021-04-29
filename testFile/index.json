@@ -5,6 +5,12 @@
   "time": "432 minute",
   "details": {
 
+"assets":{
+	"host01": [
+		{"file": "Text.md", "target": "~", "chmod": "+x+}
+		]
+	},
+
     "steps": [
       {
         "title": "Step 1",
