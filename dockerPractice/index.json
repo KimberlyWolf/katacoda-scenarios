@@ -4,11 +4,7 @@
   "difficulty": "Intermediate",
   "time": "30 minutes",
   "details": {
-"assets": {
-	"host01": [
-		{"file": "Dockerfile", "target" : 
-		"~/Courses/297/katacoda-scenarios/dockerPractice", 
-			"chmod": "+x"}] },
+
     "steps": [
       {
         "title": "Step 1",
