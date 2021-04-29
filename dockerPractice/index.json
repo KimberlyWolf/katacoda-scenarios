@@ -6,7 +6,8 @@
   "details": {
 "assets": {
 	"host01": [
-		{"file": "Dockerfile", "target" : "~/Courses/297/katacoda-scenarios/dockerPractice", 
+		{"file": "Dockerfile", "target" : 
+		"~/Courses/297/katacoda-scenarios/dockerPractice", 
 			"chmod": "+x"}] },
     "steps": [
       {
