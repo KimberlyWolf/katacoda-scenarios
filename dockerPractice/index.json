@@ -1,4 +1,4 @@
-{
+~/Courses/297/katacoda-scenarios/dockerPractice{
   "title": "Docker Practice",
   "description": "Practicing Docker and its functionality",
   "difficulty": "Intermediate",
@@ -6,7 +6,7 @@
   "details": {
 "assets": {
 	"host01": [
-		{"file": "Dockerfile", "target" : "/usr/local/bin/", 
+		{"file": "Dockerfile", "target" : "~/Courses/297/katacoda-scenarios/dockerPractice", 
 			"chmod": "+x"}] },
     "steps": [
       {
