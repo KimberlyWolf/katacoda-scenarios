@@ -10,6 +10,8 @@
 
 `if __name__ == "__main__":`{{copy}}
 
+
+Spacebar 4 times and run:
 `    app.run()`{{copy}}
 
 Save File: Control + X, Yes, Enter
@@ -30,10 +32,12 @@ Save File: Control + X, Yes, Enter
 
 `def hello():`{{copy}}
 
+Spacebar 4 times and run:
 `    return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
 
 `if __name__ == "__main__":`{{copy}}
 
+Spacebar 4 times and run:
 `    app.run(host ='0.0.0.0')`{{copy}}
 
 Save File: Control + X, Yes, Enter
