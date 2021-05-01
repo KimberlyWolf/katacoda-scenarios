@@ -26,7 +26,7 @@ Save File: Control + X, Yes, Enter
 
 `import socket`{{copy}}
 
-`app = FLask(__name__)`{{copy}}
+`app = Flask(__name__)`{{copy}}
 
 `@app.route("/")`{{copy}}
 
@@ -54,5 +54,8 @@ Save File: Control + X, Yes, Enter
 
 `RUN /.venv/bin/pip install flask gunicorn`{{copy}}
 
-`CMD ["/.venv/bin/gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]`{{copy}}
+`COPY wsgi.py .`{{copy}}
 
+`COPY app.py .`{{copy}}
+
+`CMD ["/.venv/bin/gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]`{{copy}}
