@@ -26,7 +26,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "ubuntu:1804"
   },
   "backend": {
     "imageid": "python:3.8"
