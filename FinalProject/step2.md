@@ -5,6 +5,8 @@ build your very first Docker container. This is done by using the 'docker build'
 command. When you are ready, type the command below to start the build process
 or click on it to execute the command for you.
 
+### The Docker Build Command
+
 `docker build -t app`{{execute}}
 
 We gave the command above an argument to give our container a name. Passing the
