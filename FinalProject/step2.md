@@ -2,7 +2,7 @@
 
 As mentioned in the intro, a Docker Desktop account is needed in order to make a docker container. Otherwise, you will get a *too many requests* error and will not be able to see the outputs of the following commands. If you need to create an account, go to this website <https://hub.docker.com> and sign up for free. If you already have an account or have just created it, please run the command and then provide your username and password:
 
-`docker login`{{execute}} 
+`docker login`{{execute}}
 
 
 ## Building and Running Containers
@@ -33,3 +33,6 @@ This command will start your Docker container and since you passed the argument
 'app' it will look for the app image and use that Dockerfile to run your
 container. If you do not originally name your image, one will be created for you
 and you can use that as well.
+
+Now in order to stop this container we must use 'control c'. You have now
+stopped your running container and are ready to proceed to step 3.
