@@ -1,8 +1,5 @@
 ## Learning More Docker Commands
 
-First, let's stop the current container that is running by using: 
-(insert command)
-
 ### Docker Daemon 
 
 Now we will restart the container with the command: 
@@ -25,13 +22,13 @@ This command will prompt you with quite a bit of information. The information in
 * The PORTS the container is running on
 * The NAME of the container
 
-Copy the CONTAINER ID and enter the command to stop the current, running container: 
+Copy command below into the terminal: 
 
-`docker stop <CONTAINER ID>`{{execute}}
+`docker down <CONTAINER ID>`{{copy}}
 
-Now you will remove the container using the following command with the CONTAINER ID you used in the previous command: 
+Now, copy the CONTAINER ID and replace '<CONTAINER ID>' with the actual ID that you just copied and hit enter. 
 
-`docker rm <CONTAINER ID>`{{execute}}
+This command has stopped the container as well removing it. 
 
 
 ### Creating The Docker Compose File 
@@ -42,76 +39,29 @@ Now you will create the docker compose file:
 
 Copy the following lines into the file: 
 
-`version: "3.9"`{{copy}}
+`version: "2.2"`{{copy}}
 
 `services: `{{copy}}
 
+Before pasting this line, you should indent by hitting the space bar 4 times. 
 `    flask_app: `{{copy}}
 
-`      build: .` {{copy}}
+Before pasting this line, you should indent by hitting the space bar 6 times. 
+`      build: .`{{copy}}
 
-`    nginx: `{{copy}}
+This file defines the services that are being used.
 
-`      image: nginx`{{copy}}
-
-`      volumes: `{{copy}}
-
-`        - ./nginx.conf:/etc/nginx/nginx.conf`{{{copy}}
-
-`      ports:`{{copy}}
-
-`        - "8000:80"`{{copy}}
-
-This file defines the services that are being used. In this case, we will be using nginx. 
-
-### Creating The nginx.config File 
-
-The first step is to create the file: 
-
-`touch nginx.config`{{execute}}
-
-Then, you will copy the following lines into the file: 
-
-`events {}`{{copy}}
-
-Nginx requires an event section, but it can be empty. 
-
-`http {}`{{copy}}
-
-Inside the brackets, insert the lines: 
-
-`server {}`{{copy}}
-
-Inside the backets next to the word 'server', insert the lines:
-
-`listen 80 default_server;`{{copy}}
-`server_name _;`{{copy}}
-`location /app {}`{{copy}}
-
-Inside the brackets next to the word '/app', enter the line: 
-
-`proxy_pass http://flask_app:5000/;`{{copy}}
-
-This file will use nginx as the volume. 
-
-You now have a running container!
-
-
-### Stoping And Removing The Container
-
-After creating these files, run the command: 
+After completeing docker-compose.yml file, try this command: 
 
 `docker-compose up -d`{{execute}}
 
-You can then stop the container by executing: 
+You now have a running container! 
 
-`docker-compose stop`{{execute}}
 
-Then, execute: 
+### Stopping And Removing The Container
 
-`docker-compose down --volumes`{{execute}}
+Once again, to stop and remove the container, execute the command below: 
 
-This command will bring down the container entirely as well as removing them. Passing '--volumes' removes the data volume used by the Nginx container. 
+`docker-compose down`{{execute}}
 
 You have now seen the basics of Docker Compose! 
-
