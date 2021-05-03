@@ -22,13 +22,18 @@ This command will prompt you with quite a bit of information. The information in
 * The PORTS the container is running on
 * The NAME of the container
 
-Copy command below into the terminal: 
+Copy the command below into the terminal, but do not execute just yet: 
 
-`docker down <CONTAINER ID>`{{copy}}
+`docker stop <CONTAINER ID>`{{copy}}
 
-Now, copy the CONTAINER ID and replace '<CONTAINER ID>' with the actual ID that you just copied and hit enter. 
+Now, copy the CONTAINER ID and replace ' <CONTAINER ID> ' with the actual ID that you just copied and hit execute.
+This command will stop the running container. 
 
-This command has stopped the container as well removing it. 
+Copy the command below into the terminal, but do not execute just yet: 
+
+`docker rm <CONTAINER ID>`{{copy}}
+
+This command will will remove the container. 
 
 
 ### Creating The Docker Compose File 
@@ -41,13 +46,24 @@ Copy the following lines into the file:
 
 `version: "2.2"`{{copy}}
 
+Hit enter to move to the next line. 
+
+Copy the next line and paste it directly under the first line. 
+
 `services: `{{copy}}
 
+Hit enter to move to the next line. 
+
 Before pasting this line, you should indent by hitting the space bar 4 times. 
+
 `    flask_app: `{{copy}}
 
-Before pasting this line, you should indent by hitting the space bar 6 times. 
+Then hit enter to move to the next line. 
+
+Before pasting this line, make sure the cursor is directly underneath 'flask_app: ' and hit the space bar 2 times to indent. 
+
 `      build: .`{{copy}}
+
 
 This file defines the services that are being used.
 
@@ -58,9 +74,9 @@ After completeing docker-compose.yml file, try this command:
 You now have a running container! 
 
 
-### Stopping And Removing The Container
+### Stopping And Removing The Container With Docker Compose 
 
-Once again, to stop and remove the container, execute the command below: 
+To stop and remove the container, execute the command below: 
 
 `docker-compose down`{{execute}}
 
