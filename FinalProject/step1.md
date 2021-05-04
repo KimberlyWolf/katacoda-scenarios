@@ -38,9 +38,9 @@ app = Flask(__name__)
 def hello():
 </pre>
 
-After `touch def hello():,` please copy the following line with an indent of approximately 4 spaces: 
+After `def hello():,` please copy the following line with an indent of approximately 4 spaces: 
 
-`touch    return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
+`.   return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
 
 Then please continue copying the rest of the file:
 
