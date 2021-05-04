@@ -10,6 +10,6 @@ Here, you will learn how to:
 
 * Run basic docker commands and learn their outputs.
 
-Before we get started, you **must** have a Docker Desktop account. You will need your login information in order to get the full experience of this program. Otherwise, there will be parts of this program that cannot be run. If you do not already have an account please go to <https://hub.docker.com> and sign up for free.
+Before we get started, you might need to have a Docker Desktop account. Katacoda will occasionally have an error that occurs if you are not logged in to Docker. However, that error occurs seldomly. If that error occurs, there will be parts of this program that cannot be run unless you log into your account with a command provided in this tutorial. If you do not already have an account please go to <https://hub.docker.com> and sign up for free.
 
 

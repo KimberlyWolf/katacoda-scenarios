@@ -10,15 +10,13 @@ To create the file, run the following command in the terminal:
 
 Next, you will go to the editor and click on the newly created wsgi.py file to open it.
 
-Now, we have to copy the following lines into the wgsi.py file. Each of the lines are on a separate line.
+Now, we have to copy the following lines into the wgsi.py file.
 
-`from app import app`{{copy}}
-
-`if __name__ == "__main__":`{{copy}}
-
-*In case the editor has not done this automatically, this line should be about 4 spaces indented*
-`    app.run()`{{copy}}
-
+<pre class="file" data-target="clipboard">
+from app import app
+if __name__ == "__main__":
+    app.run()
+</pre>
 
 ### Next, let's create the app.py file
 
@@ -28,26 +26,21 @@ To create the file, run the following command in the terminal:
 
 Next, you will go to the editor and click on the newly created app.py file to open it.
 
-Now, we have to copy the following lines into the app.py file. Each of the lines are on a separate line.
+Now, we have to copy the following lines into the app.py file. 
 
-`from flask import Flask`{{copy}}
+<pre class="file" data-target="clipboard">
+from flask import Flask
+import socket
 
-`import socket`{{copy}}
+app = Flask(__name__)
+@app.route("/")
 
-`app = Flask(__name__)`{{copy}}
-
-`@app.route("/")`{{copy}}
-
-`def hello():`{{copy}}
-
-*In case the editor has not done this automatically, this line should be about 4 spaces indented*
-`    return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
-
-*This line should NOT be indented. If the editor made the indent, please remove it*
-`if __name__ == "__main__":`{{copy}}
-
-*In case the editor has not done this automatically, this line should be about 4 spaces indented*
-`    app.run(host ='0.0.0.0')`{{copy}}
+def hello():
+    return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())
+    
+if __name__ == "__main__":
+    app.run(host ='0.0.0.0')
+</pre>
 
 
 ### Finally, we can create the Dockerfile
@@ -60,18 +53,20 @@ Next, you will go to the editor and click on the newly created Dockerfile to ope
 
 Now, we have to copy the following lines into the Dockerfile. Each of the lines are on a separate line.
 
-`FROM python:3.8-slim-buster`{{copy}}
+<pre class="file" data-target="clipboard">
 
-`WORKDIR /app`{{copy}}
+FROM python:3.8-slim-buster
 
-`RUN python3 -m venv /.venv`{{copy}}
+WORKDIR /app
 
-`RUN /.venv/bin/pip install flask gunicorn`{{copy}}
+RUN python3 -m venv /.venv
 
-`COPY wsgi.py .`{{copy}}
+RUN /.venv/bin/pip install flask gunicorn
 
-`COPY app.py .`{{copy}}
+COPY wsgi.py .
 
-`CMD ["/.venv/bin/gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]`{{copy}}
+COPY app.py .
+CMD ["/.venv/bin/gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]
+</pre>
 
 Once all of these lines are copied over, you may move onto the next step.
