@@ -3,14 +3,6 @@
 [![](http://shields.katacoda.com/katacoda/kimberlywolf/count.svg)](https://www.katacoda.com/kimberlywolf "Get your profile on Katacoda.com")
 
 
-### NOTE:
-
-When creating and pushing files to GitHub, using "git push origin" does NOT create or update the program on Katacoda. I am not sure why that happens!
-Using "git push" is the only way to combat that. I am not sure if this effects creating branches or not. Testing that has been done in a separate
-repo shows that creating a branch and using "git push origin -*branch name*-" does NOT add it to Katacoda.
-
--Kim
-
 ## Project Overview
 
 In this project, we have created a basic tutorial in Katacoda. In this repo however, it includes several "test files" that were meant as a template for 
@@ -42,7 +34,7 @@ This index.json file incudes all of the information you put in when creating the
 as adding files from your own computer into the program, so they can be utilized in your tutorial. Unfortunately, we were not able to get that to work in our 
 tutorial. In all of the markdown files, this is where you will put all of the text and commands that the student needs to go through the tutorial. Katacoda 
 has a pluggin that allows for you to execute lines of code in the terminal just by clicking on the text, as well as a copy feature. The execute command can be 
-run like this: ***`touch TERMINAL LINE OF CODE`{{execute}}***. The copy command can be run like this: ***`touch LINE OF TEXT OR CODE`{{copy}}***. 
+run like this: ***`TERMINAL LINE OF CODE`{{execute}}***. The copy command can be run like this: ***`LINE OF TEXT OR CODE`{{copy}}***. 
 
 Once you have made any changes to the markdown and json files, you will need to send it over to GitHub. You will run ***git add .*** , then run the 
 ***git commit -m "Commit message"***, and finally, run ***git push***. You should be able to go to your Katacoda account and notice that your program, with 
@@ -56,9 +48,17 @@ Here are the links we used in order to install, create, and run our program:
 
 <https://www.katacoda.com>
 
-*This link is the direct download page of Node.js. This was provided from Katacoda themselves.*
+*This link is the direct download page of Node.js. This was provided from Katacoda themselves:*
 
 <https://nodejs.org/en/download/>
 
 <https://hub.docker.com>
 
+
+### NOTE:
+
+When creating and pushing files to GitHub, using "git push origin" does NOT create or update the program on Katacoda. I am not sure why that happens!
+Using "git push" is the only way to combat that. I am not sure if this effects creating branches or not. Testing that has been done in a separate
+repo shows that creating a branch and using "git push origin -*branch name*-" does NOT add it to Katacoda.
+
+-Kim
