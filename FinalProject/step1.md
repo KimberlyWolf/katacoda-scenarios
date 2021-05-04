@@ -9,6 +9,7 @@ To create the file, run the following command in the terminal:
 `touch wsgi.py`{{execute}}
 
 Next, you will go to the editor and click on the newly created wsgi.py file to open it.
+If the editor is not working, please run `nano wsgi.py`{{execute}} to open a text editor in the terminal.
 
 Now, we have to copy the following lines into the wgsi.py file.
 
@@ -18,6 +19,8 @@ if __name__ == "__main__":
     app.run()
 </pre>
 
+If you were writing in the terminal, you need to save your file with the following steps: (control + X), Y, Enter.
+
 ### Next, let's create the app.py file
 
 To create the file, run the following command in the terminal:
@@ -25,6 +28,7 @@ To create the file, run the following command in the terminal:
 `touch app.py`{{execute}}
 
 Next, you will go to the editor and click on the newly created app.py file to open it.
+If the editor is not working, please run `nano app.py`{{execute}} to open a text editor in the terminal.
 
 Now, we have to copy the following lines into the app.py file. 
 
@@ -38,9 +42,9 @@ app = Flask(__name__)
 def hello():
 </pre>
 
-After `def hello():,` please copy the following line with an indent of approximately 4 spaces: 
+After *def hello():* please copy the following line with an indent of approximately 4 spaces: 
 
-`.   return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
+`   return "<h1 style='color:blue'>Hello There from {}!</h1>".format(socket.gethostname())`{{copy}}
 
 Then please continue copying the rest of the file:
 
@@ -49,6 +53,7 @@ if __name__ == "__main__":
     app.run(host ='0.0.0.0')
 </pre>
 
+If you were writing in the terminal, you need to save your file with the following steps: (control + X), Y, Enter.
 
 ### Finally, we can create the Dockerfile
 
@@ -57,6 +62,7 @@ To create the file, run the following command in the terminal:
 `touch Dockerfile`{{execute}}
 
 Next, you will go to the editor and click on the newly created Dockerfile to open it.
+If the editor is not working, please run `nano Dockerfile`{{execute}} to open a text editor in the terminal.
 
 Now, we have to copy the following lines into the Dockerfile. Each of the lines are on a separate line.
 
@@ -75,5 +81,7 @@ COPY wsgi.py .
 COPY app.py .
 CMD ["/.venv/bin/gunicorn", "--bind", "0.0.0.0:5000", "wsgi:app"]
 </pre>
+
+If you were writing in the terminal, you need to save your file with the following steps: (control + X), Y, Enter.
 
 Once all of these lines are copied over, you may move onto the next step.
