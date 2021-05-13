@@ -35,5 +35,5 @@ This command will start your Docker container and since you passed the argument
 container. If you do not originally name your image, one will be created for you
 and you can use that as well.
 
-Now in order to stop this container we must use 'control c'. You have now
+Now in order to stop this container we must use 'CTRL c'. You have now
 stopped your running container and are ready to proceed to step 3.
